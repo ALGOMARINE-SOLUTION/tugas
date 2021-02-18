@@ -1,4 +1,4 @@
-Repositori ini dikhususkan untuk belajar pada saat sesi diklat. Bukan untuk pengumpulan tugas.
+Repositori ini dikhususkan untuk pengumpulan tugas.
 
 Peraturan untuk repositori ini:
 1. Perubahan apapun yang hendak dilakukan harus membuat branch baru dengan format nama branch nama_kebutuhan. Misal ghifari_penambahanFiturKalkulator atau ghifari_perbaikanBugCalendar
