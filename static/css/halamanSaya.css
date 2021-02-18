@@ -1,0 +1,119 @@
+.cek {
+    background: url("../img/181937.jpg");
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.main {
+    opacity: 1;
+}
+
+.main header {
+    text-align: center;
+    margin-top: -5px;
+    margin-left: -5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgray;
+}
+
+.main section {
+    margin-top: 15px;
+    box-shadow: 5px 5px rgba(95, 95, 95, 0.233);
+    margin-left: 23%;
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #f3f0f0d0;
+}
+
+
+.main section nav ul {
+    list-style-type: none;
+}
+
+.main section nav ul li {
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35.75%;
+}
+
+.main section nav ul li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.main section nav ul li button:hover {
+    text-decoration: underline;
+}
+
+.main section nav ul li:first-child {
+    margin-left: -40px;
+    border-bottom: 0px solid rgb(136, 136, 136);
+}
+
+.main section nav ul li:nth-child(2) {
+    border-bottom: 1px solid rgb(136, 136, 136);
+    border-left: 1px solid rgb(136, 136, 136);
+}
+
+.feedbackSection {
+    display: block;
+}
+
+.feedbackSection h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.feedbackSection input {
+    margin-left: 35%;
+}
+
+.feedbackSection button {
+    margin-left: 35%;
+}
+
+.feedbackSection p {
+    margin-left: 35%;
+}
+
+.feedbackSection input:invalid {
+    background-color: rgb(245, 199, 199);
+}
+
+.resultSection {
+    display: none;
+}
+
+.resultSection h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.resultSection p {
+    margin-left: 20%;
+}
+
+#sender {
+    font-style: italic;
+}
+
+#senderFeedback {
+    font-style: italic;
+}
+
+@media (max-width: 769px) {
+    
+}
