@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    justify-content: center;
+    background-color: rgb(136, 212, 241);
+    background-image: url(../images/pexels-lisa-fotios-2528324.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    background-color: #fff;
+    max-width: 100%;
+    justify-content: center;
+}
+
+header img{
+    position: relative;
+    max-width: 200px;
+    width: 100px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 5px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+header h2{
+    float: right;
+    margin-right: 120px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 35px;
+    line-height: 1.4cm;
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+}
+
+header h2 span{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    color: rgb(24, 216, 206);
+}
+
+header .logoose{
+    height: 123px;
+    width: 123px;
+}
+
+header .logoalgo{
+    margin-bottom: 40px;
+    width: 210px
+}
+
+.data1{
+    position: relative;
+    width: 800px;
+    min-height: 950px;
+    max-height: 1500px;
+    justify-content: center;
+    background-position: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.774);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/Background\ 2.jpg);
+    border-radius: 20px;
+}
+
+.data1 .judul{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(35, 142, 184);
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+.data1 nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.data1 nav ul li:hover{
+    transform: translateY(-5px);
+    transition: 0.1s;
+}
+
+.data1 nav ul li button{
+    font-size: 30px;
+    size: 100%;
+    width: 300px;
+    height: 75px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    outline: none;
+    border:  3px solid #88afd6;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 1.5pt 1.5pt;
+    box-shadow: #88afd6c0 2pt 2pt;
+}
+
+.data1 nav ul li button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgb(126, 203, 206);
+    transition: 0.1s;
+    color: #fff;
+    border:  none;
+    box-shadow: #46a9bb 1.5pt 1.5pt;
+}
+
+.data1 .inputdata1{
+    margin-left: 100px;
+    display: block;
+    background-color: #e2e2e2dc;
+    margin-right: 100px;
+    min-height: 590px;
+    max-height: 400px;
+    box-shadow: #88afd6c0 5pt 5pt;
+    border-radius: 10px;
+}
+
+.data1 .inputdata1 h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 5px;
+    padding-top: 130px;
+    font-size: 35px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+.data1 .inputdata1 p{
+    margin-top: 5px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data1 .inputdata1 input{
+    margin-top: 20px;
+    padding-left: 27px;
+    font-size: 15px;
+}
+
+.data1 .inputdata1 .submitbutton1{
+    float: right;
+    margin-right: 50px;
+    margin-top:80px;
+    height: 40px;
+    width: 100px;
+    border: 3px solid #88afd6;
+    border-radius: 30px;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 1.5pt 1.5pt;
+}
+
+.data1 .inputdata1 .submitbutton1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.data1 .outputdata1{
+    display: none;
+    background-color: #e2e2e2dc;
+    margin-right: 100px;
+    margin-left: 100px;
+    min-height: 650px;
+    max-height: 1000px; 
+    box-shadow: #88afd6c0 5pt 5pt;
+    border-radius: 10px;
+}
+
+.data1 .outputdata1 h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 5px;
+    padding-top: 20px;
+    font-size: 35px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+.data1 .outputdata1 p{
+    margin-top: 5px;
+    padding-left: 60px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data1 .outputdata1 img{
+    min-width: 380px;
+    max-width: 500px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.katapembuka{
+    position: absolute;
+    margin-left: 250px; 
+    color: #333;
+    font-size: 35px;
+    line-height: 1.4cm;
+    font-weight: 500;
+}
+
+.data2{
+    position: relative;
+    width: 800px;
+    min-height: 1100px;
+    justify-content: center;
+    background-position: center;
+    margin-left: 30%;
+    margin-bottom: 4%;
+    box-shadow: 10px 10px 30px rgba(15, 99, 133, 0.5); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/pantai.jpg);
+    border-radius: 20px;
+}
+
+.data2 .judul{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(35, 142, 184);
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+.data2 nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.data2 nav ul li:hover{
+    transform: translateY(-5px);
+    transition: 0.1s;
+}
+
+.data2 nav ul li button{
+    font-size: 30px;
+    size: 100%;
+    width: 300px;
+    height: 75px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    outline: none;
+    border:  3px solid #88afd6;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 1.5pt 1.5pt;
+    box-shadow: #60aefd8f 2.5pt 2.5pt;
+}
+
+.data2 nav ul li button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgb(126, 203, 206);
+    transition: 0.1s;
+    color: #fff;
+    border:  none;
+    box-shadow: #46a9bb 1.5pt 1.5pt;
+}
+
+.data2 .inputdata2{
+    margin-left: 100px;
+    background-color: #e2e2e2dc;
+    margin-right: 100px;
+    min-height: 850px;
+    max-height: 1000px;
+    box-shadow: #88afd6c0 5pt 5pt;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.data2 .inputdata2 h3 {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 35px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+.data2 .inputdata2 p {
+    margin-top: 20px;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data2 .inputdata2 input{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.data2 .inputdata2 .submitbutton2{
+    float: right;
+    margin-right: 50px;
+    height: 40px;
+    width: 100px;
+    border: 3px solid #88afd6;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 1.5pt 1.5pt;
+}
+
+.data2 .inputdata2 .submitbutton2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.data2 .outputdata2{
+    margin-left: 100px;
+    display: none;
+    background-color: #e2e2e2dc;
+    margin-right: 100px;
+    min-height: 830px;
+    max-height: 3000px;
+    box-shadow: #88afd6c0 5pt 5pt;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.data2 .outputdata2 h3{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 35px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(35, 156, 204);
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+.data2 .outputdata2 p{
+    margin-top: 20px;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data2 .outputdata2 img{
+    justify-content: center;
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #fff;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+footer h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    color: rgb(24, 216, 206);
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: #88afd6 2.5pt 2.5pt;
+}
+
+footer p{
+    margin-bottom: 30px;
+    color: #333;
+    text-shadow: #292828 1pt 1pt;
+    font-size: 40px;
+    line-height: 1.4cm;
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
