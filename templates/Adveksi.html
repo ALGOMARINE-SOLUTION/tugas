@@ -1,0 +1,107 @@
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <title> Adveksi 1D </title>
+    <link rel="stylesheet" href="../static/CSS/Adveksi.css">
+</head>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <h1 data-text="Algomarine">Algomarine</h1> 
+            <img src="../static/img/logo undip (1).png" class="Undip">
+        </div>
+    </div>
+    <div class="header2">
+        <div class="inner_header">
+
+            <img src="../static/img/tlogo ose.jpg" class="Ose">
+
+        </div>
+    </div>
+
+    <div class="data1">
+        <nav>
+            <ul>    
+                <li><button type="button" id="buttoninput1"><b>Input</b></button></li>
+                <li><button type="button" id="buttonoutput1"><b>Output</b></button></li>
+            </ul>
+        </nav>
+        <div class="inputdata1"> 
+            <div class="box">
+                <form action="/modeladveksi1d" method="post" class="content" enctype="multipart/form-data">
+                    <h2>03</h2>
+                    <h3>Input Data Adveksi 1D</h3>
+                    <input type="number" placeholder="Masukkan Nilai L">
+                    <input type="number" placeholder="Masukkan Nilai T">
+                    <input type="number" placeholder="Masukkan Nilai dt">
+                    <input type="number" placeholder="Masukkan Nilai u">
+                    <input type="number" placeholder="Masukkan Nilai dx">
+                    <input type="number" placeholder="Masukkan Nilai index 1<=index<=(L/dx)">
+                    <input type="number" placeholder="Masukkan Nilai index 1<=index<=(L//dx)">
+                    <float><button type="submit" id="submitbutton1" class="submitbutton1" id="submitbutton1">Submit</button></float>
+                </form>
+            </div>
+                
+        </div>
+        <div class="outputdata1">
+            <div class="box2">
+                <div class="content2">
+                    <h2>03</h2>
+                    <h3>Monggo Grafiknya</h3>
+                    <p> Hasil yang anda masukan ada dibawah sini</p>
+                    <p id="output"></p>
+                </div>
+                <img src="{{ naga }}" style="width:500px;max-width:500px;" id="output"></img>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            var openinput1 = document.getElementById("buttoninput1");
+            var openoutput1 = document.getElementById("buttonoutput1");
+
+            var inputsection = document.querySelector(".data1 .inputdata1");
+            var outputsection = document.querySelector(".data1 .outputdata1");
+
+            var styleinput1section = getComputedStyle(inputsection);
+            var styleoutput1section = getComputedStyle(outputsection);
+
+            openinput1.addEventListener("click", openinput1function);
+            openoutput1.addEventListener("click", openoutput1function);
+
+            function openinput1function(){
+                if(styleoutput1section.display =="block"){
+                    outputsection.style.display = "none";
+                    inputsection.style.display = "block";
+                }
+            }
+            function openoutput1function(){
+                if(styleinput1section.display == "block"){
+                    outputsection.style.display = "block";
+                    inputsection.style.display = "none";
+                }
+            }
+
+            var inputgambar = document.getElementById("inputdata");
+
+            var submitbutton1 = document.getElementById("submitbutton1")
+            submitbutton1.addEventListener("click", opensubmitbutton1)
+
+            var hasilgambar = document.getElementById("output")
+
+            function opensubmitbutton1(){
+                if(inputgambar.value ==""){
+                    return alert("Monggo Diisi Dulu")
+                }
+
+                if (confirm("Bismillahirah bisa")){
+                    hasilgambar.textContent = inputgambar.value
+                }
+            }
+        </script>
+    </div>
+
+    
+   
+</body>
