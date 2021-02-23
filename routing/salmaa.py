@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, Response, Blueprint
-from heru import buat_windrose
-from bangkit import diffusion_FTCS
-from agri import OlahDataAdveksi1D
+from application.heru import buat_windrose
+from application.bangkit import diffusion_FTCS
+from application.agri import OlahDataAdveksi1D
 
 app = Blueprint('salmaa',__name__)
 
