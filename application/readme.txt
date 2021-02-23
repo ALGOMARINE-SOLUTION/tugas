@@ -1,0 +1,1 @@
+Untuk nyimpen aplikasi .py
