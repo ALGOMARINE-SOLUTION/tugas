@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>Kelompok 3</title>
+        <link rel="stylesheet" href="../static/css/halaman1.css">
+    </head>
+
+    <body>
+         <img src="../static/img/logo undip (1).png" id="undip">
+         <img src="../static/img/Logo ose.png" id="ose">
+         <img src="../static/img/LogoAlgomarine.png" id="algo">
+         <div class="haha"><br><br>
+                <form action="/aksidiagramts" enctype="multipart/form-data" method="post">
+                <p>Diagram T-S</p>
+                <span>Download excel <a href="../static/Stasiun_1.xlsx">disini</a></span>
+                <br>
+                <input type="file" name= "fileawal" id="diagram"><br>
+                </form>
+            <form action="/aksisst" enctype="multipart/form-data" method="post">
+                <p>SST Timeseries</p>
+                <span>Download excel pertama <a href="../static/SST_Timeseries_Wilayah_Natuna.xlsx">disini</a></span><br>
+                <span>Download excel kedua <a href="../static/SST_Timeseries_Wilayah_Sulawesi.xlsx">disini</a></span><br>
+                <br>
+                <input type="file" name="sst1" id="sst1">
+                <input type="file" name="sst2" id="sst2">
+                <button class="button" type="submit">Hasil</button><br>
+            </form>
+            <form action="/aksipasut" enctype="multipart/form-data" method="post">
+                <p>Grafik Pasut</p>
+                <span>Download excel <a href="../static/Data_Pasut_Perairan_Tanjung_Emas_September2020.xlsx">disini</a></span>
+                <br>
+                <input type="file" name="pasut" id="pasut"><br>
+            </form>
+            <br><p>Oleh:</p>
+            <p>Kelompok 3</p>
+         </div>
+    </body>
+</html>
