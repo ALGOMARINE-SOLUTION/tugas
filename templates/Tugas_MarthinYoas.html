@@ -1,0 +1,230 @@
+<html lang ="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <title> Project Algomarine </title>
+    <link rel="stylesheet" href="../static/css/Tugas_MarthinYoas.css">
+</head>
+<body>
+    <header>
+        <img src="../static/img/logo undip (1).png">
+        <img src="../static/img/tlogo ose.jpg" class="logoose">
+        <img src="../static/img/Logo Algos Biasa.png" class="logoalgo">
+        <h2>Project Algomarine<br>By : <span>Team 6</span></h2>
+    </header>
+    <main>
+    <div class="data1">
+        <div class="judul"><B>BATIMETRI 2D/3D</B></div>
+        <nav>
+            <ul>
+                <li><button type="button" id="buttoninput1"><b>Input</b></button></li>
+                <li><button type="button" id="buttonoutput1"><b>Output</b></button></li>
+            </ul>
+        </nav>
+        <form action="/tim6/tim6batimetri" method="post" class="inputdata1" enctype= 'multipart/form-data'>
+            <h3>INPUT DATA</h3>
+            <p>1. Masukkan Data Olah</p>
+            <p>Diharap olah data yang dimasukkan dalam format excel<br> Format Excel dapat di Download <a href="static/Batimetri.xlsx">Disini</a></p>
+            <input type="file" accept=".xlsx" name= "boongbanget" id="inputdata" onsubmit="return beforeSubmit(this)">
+            <br>
+            <float><button type="submit" id="submitbutton1" class="submitbutton1" id="submitbutton1">Submit</button></float>
+        </form>
+
+        <form action="/tim6/tim6batimetri" method="post" class="outputdata1" enctype= 'multipart/form-data'>
+            <h3>Hasil Input</h3>
+            <p> Hasil yang anda masukan ada dibawah sini</p>
+            <img id="outputazizi" src="{{ boongbeneran }}"></img>
+        </form>
+
+        <script type="text/javascript">
+            var openinput1 = document.getElementById("buttoninput1");
+            var openoutput1 = document.getElementById("buttonoutput1");
+
+            var inputsection = document.querySelector(".data1 .inputdata1");
+            var outputsection = document.querySelector(".data1 .outputdata1");
+
+            var styleinput1section = getComputedStyle(inputsection);
+            var styleoutput1section = getComputedStyle(outputsection);
+
+            openinput1.addEventListener("click", openinput1function);
+            openoutput1.addEventListener("click", openoutput1function);
+
+            function openinput1function(){
+                if(styleoutput1section.display =="block"){
+                    outputsection.style.display = "none";
+                    inputsection.style.display = "block";
+                }
+            }
+
+            function openoutput1function(){
+                if(styleinput1section.display == "block"){
+                    outputsection.style.display = "block";
+                    inputsection.style.display = "none";
+                }
+            }
+
+            var inputgambar = document.getElementById("inputdata");
+
+            var submitbutton1 = document.getElementById("submitbutton1")
+            submitbutton1.addEventListener("click", opensubmitbutton1)
+
+            var hasilgambar = document.getElementById("outputazizi")
+
+            function opensubmitbutton1(){
+                if(inputgambar.value ==""){
+                    return alert("Datanya diisi dulu ya kaka")
+                }
+                if (confirm("sudah lengkap ya kaka?")){
+                    hasilgambar.textContent = inputgambar.value
+                }
+            }
+        </script>
+    </div>
+
+    <div class = "data2">   
+        <form action="/tim6/tim6hidro" method="post">
+            <div class="judul"><b>HIDRODINAMIKA 1 DIMENSI</b></div>
+            <nav>
+                <ul>
+                    <li><button type="button" id="buttoninput2"><b>Input</b></button></li>
+                    <li><button type="button" id="buttonoutput2"><b>Output</b></button></li>
+                </ul>
+            </nav>
+        </form>
+        <form action="/tim6/tim6hidro" method="post" class="inputdata2"> 
+            <h3>INPUT DATA</h3>
+            <p>1. Masukkan Nilai p</p>
+            <input type="number" name="p" id="inputdatap">
+            <p>2. Masukkan Nilai T</p>
+            <input type="number" name="T" id="inputdatat">
+            <p>3. Masukkan Nilai A</p>
+            <input type="number" name="A" id="inputdataa">
+            <p>4. Masukkan Nilai D</p>
+            <input type="number" name="D" id="inputdatad">
+            <p>5. Masukkan Nilai dt</p>
+            <input type="number" name="dt" id="inputdatadt">
+            <p>6. Masukkan Nilai To</p>
+            <input type="number" name="To" id="inputdatato">
+            <p>7. Masukkan Nilai dx</p>
+            <input type="number" name="dx" id="inputdatadx">
+            <p>8. Masukkan Nilai index1</p>
+            <input type="number" name="1" id="inputdataindex1a">
+            <p>9. Masukkan Nilai index2</p>
+            <input type="number" name="2" id="inputdataindex2a">
+            <br><br>
+            <float><button type="submit" class="submitbutton2" id="submitbutton2">Submit</button></float>
+        </form>
+        <div class="outputdata2">
+            <h3>Hasil Input</h3>
+            <p>Hasil Grafik 1 yang didapat</p>
+            <img id="outputgambar" src="{{ boonglagi }}">
+            <p>Hasil Grafik 2 yang didapat</p>
+            <img id="outputgrafik1" src="{{ boonglagi }}">
+            <p>Hasil Grafik 3 yang didapat</p>
+            <img id="outputgrafik2" src="{{ boonglagi }}">
+            <p>Hasil Grafik 4 yang didapat</p>
+            <img id="outputgrafik3" src="{{ boonglagi }}">
+        </div>
+    </div>
+
+        <script type="text/javascript">
+            var openinput2 = document.getElementById("buttoninput2");
+            var openoutput2 = document.getElementById("buttonoutput2");
+
+            var inputsection2 = document.querySelector(".data2 .inputdata2");
+            var outputsection2 = document.querySelector(".data2 .outputdata2");
+
+            var styleinput2section = getComputedStyle(inputsection2);
+            var styleoutput2section = getComputedStyle(outputsection2);
+
+            openinput2.addEventListener("click", openinput2function);
+            openoutput2.addEventListener("click", openoutput2function);
+
+            function openinput2function(){
+                if(styleoutput2section.display =="block"){
+                    outputsection2.style.display = "none";
+                    inputsection2.style.display = "block";
+                }
+            }
+
+            function openoutput2function(){
+                if(styleinput2section.display == "block"){
+                    outputsection2.style.display = "block";
+                    inputsection2.style.display = "none";
+                }
+            }
+
+            var inputp = document.getElementById("inputdatap");
+            var inputt = document.getElementById("inputdatat");
+            var inputa = document.getElementById("inputdataa");
+            var inputd = document.getElementById("inputdatad");
+            var inputdt = document.getElementById("inputdatadt");
+            var inputto = document.getElementById("inputdatato");
+            var inputdx = document.getElementById("inputdatadx");
+            var inputindex1a = document.getElementById("inputdataindex1a");
+            var inputindex1b = document.getElementById("inputdataindex1b");
+            var inputindex1c = document.getElementById("inputdataindex1c");
+            var inputindex2a = document.getElementById("inputdataindex2a");
+            var inputindex2b = document.getElementById("inputdataindex2b");
+            var inputindex2c = document.getElementById("inputdataindex2c");
+
+            var submitbutton2 = document.getElementById("submitbutton2")
+            submitbutton2.addEventListener("click", opensubmitbutton2)
+
+            var hasilgrafik1= document.getElementById("outputgambar")
+            var hasilgrafik2= document.getElementById("outputgrafik1")
+            var hasilgrafik3= document.getElementById("outputgrafik2")
+            var hasilgrafik4= document.getElementById("outputgrafik3")
+
+            function opensubmitbutton2(){
+                if(inputp.value ==""){
+                    return alert("Isi dulu nilai P nya")
+                }
+                if(inputt.value ==""){
+                    return alert("Isi dulu nilai T nya")
+                }
+                if(inputa.value ==""){
+                    return alert("Isi dulu nilai A nya")
+                }
+                if(inputd.value ==""){
+                    return alert("Isi dulu nilai D nya")
+                }
+                if(inputdt.value ==""){
+                    return alert("Isi dulu nilai dt nya")
+                }
+                if(inputto.value ==""){
+                    return alert("Isi dulu nilai To nya")
+                }
+                if(inputdx.value ==""){
+                    return alert("Isi dulu nilai dx nya")
+                }
+                if(inputindex1a.value ==""){
+                    return alert("Isi dulu nilai Index1 nya")
+                }
+                if(inputindex2a.value ==""){
+                    return alert("Isi dulu nilai Index2 nya")
+                }
+                if (confirm("sudah lengkap ya kaka?")){
+                    hasilgrafik1.textContent = inputp.value+ inputt.value + inputa.value + inputd.value + inputdt.value + inputto.value + inputdx.value +
+                    inputindex1a.value + inputindex1b.value + inputindex1c.value + inputindex2a.value + inputindex2b.value + inputindex2c.value
+
+                    hasilgrafik2.textContent = inputp.value+ inputt.value + inputa.value + inputd.value + inputdt.value + inputto.value + inputdx.value +
+                    inputindex1a.value + inputindex1b.value + inputindex1c.value + inputindex2a.value + inputindex2b.value + inputindex2c.value
+
+                    hasilgrafik3.textContent = inputp.value+ inputt.value + inputa.value + inputd.value + inputdt.value + inputto.value + inputdx.value +
+                    inputindex1a.value + inputindex1b.value + inputindex1c.value + inputindex2a.value + inputindex2b.value + inputindex2c.value
+
+                    hasilgrafik4.textContent = inputp.value+ inputt.value + inputa.value + inputd.value + inputdt.value + inputto.value + inputdx.value +
+                    inputindex1a.value + inputindex1b.value + inputindex1c.value + inputindex2a.value + inputindex2b.value + inputindex2c.value
+                }
+            }
+        </script>
+    <footer>
+        <h2>Makers :</h2>
+        <p><b>Frontend : </b>Marthin Wahyono (Ose 2019)</p>
+        <p><b>Backend : </b> Yoas Heryanto (Ose 2019) </p>
+        <p><b>Phyton 1 : </b> Azizi Dirgantara (Ose 2019)</p>
+        <p><b>Phyton 2 : </b> Rezy Ayatussyafi (Ose 2018)</p>
+    </footer>
+    </main>
+</body>
