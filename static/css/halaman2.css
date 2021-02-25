@@ -1,0 +1,57 @@
+#undip{
+    width: 50px;
+    height: 60px;
+}
+
+#ose{
+    width: 55px;
+    height: 55px;
+}
+
+#algo{
+    width: 212px;
+    height: 40px;
+}
+
+body {
+    background-color: rgb(213, 215, 218);
+}
+
+.hasil{
+    text-align: center;
+    align-items: center;
+}
+
+.hasil p{
+    font-size: 5.5mm;
+    margin-left: 14.35cm;
+    background-color: rgb(112, 177, 233);
+    width: 6.5cm;
+    border-radius: 2cm;
+}
+
+.hasil1 img{
+    width: 5.5cm;
+    height: 5.5cm;
+    text-align: center;
+    margin-left: 77px;
+}
+
+.hasil2 img{
+    width: 5.5cm;
+    height: 5.5cm;
+    text-align: center;
+    margin-left: 77px;
+}
+
+.hasil3 img{
+    width: 5.5cm;
+    height: 5.5cm;
+    text-align: center;
+    margin-left: 77px;
+}
+
+.oleh{
+    font-size: 5.6mm;
+    font-style: italic;
+}

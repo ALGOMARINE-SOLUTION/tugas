@@ -1,0 +1,101 @@
+#undip{
+    width: 50px;
+    height: 60px;
+}
+
+#ose{
+    width: 55px;
+    height: 55px;
+}
+
+#algo{
+    width: 212px;
+    height: 40px;
+}
+
+body {
+    background-color: rgb(213, 215, 218);
+}
+
+body p{
+    font-size: 6mm;
+    font-style: italic;
+}
+
+form {
+    background-color: rgb(131, 184, 236);
+    width: 6.5cm;
+    height: 5cm;
+    margin-left: 3cm;
+    margin-right: 1.5cm;
+    border-radius: 1cm;
+    position: center;
+    outline: rgb(81, 135, 182);
+    text-align: center;
+    font-size: 4.5mm;
+    float: left;
+    align-items: center;
+}
+
+.txt2{
+    background-color: rgb(81, 135, 182);
+    width: 6.5cm;
+    height: 5cm;
+    margin-left: 3cm;
+    margin-right: 2cm;
+    border-radius: 1cm;
+    position: center;
+    outline: rgb(81, 135, 182);
+    text-align: center;
+    font-size: 4.5mm;
+    float: left;
+}
+
+.txt3{
+    background-color: rgb(81, 135, 182);
+    width: 6.5cm;
+    height: 5cm;
+    margin-left: 2.5cm;
+    border-radius: 1cm;
+    position: center;
+    outline: rgb(81, 135, 182);
+    text-align: center;
+    font-size: 4.5mm;
+    float: left;
+}
+
+#diagram{
+    border: none;
+    height: 0.6cm;
+    margin-left: 1cm;
+}
+
+#sst1{
+    border: none;
+    height: 0.6cm;
+    margin-left: 1cm;
+}
+
+#sst2{
+    border: none;
+    height: 0.6cm;
+    margin-left: 1cm;
+}
+
+#pasut{
+    border: none;
+    height: 0.6cm;
+    margin-left: 1cm;
+}
+
+.button{
+    font-size: 5mm;
+    margin-top: 1cm;
+    margin-left: 1.3cm;
+    margin-right: 3cm;
+    background-color: rgb(81, 135, 182);
+    width: 4cm;
+    border-radius: 1cm;
+    position: center;
+    outline: rgb(81, 135, 182);
+}
