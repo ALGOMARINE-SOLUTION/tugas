@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Proyek Team 5</title>
+        <link rel="stylesheet" href="../static/css/tugas_patricknia2.css">
+    </head>
+    <body>
+        <div class="logo">
+            <header>
+                <img src="../static/img/logo undip hitam.jpg" class="logoundip">
+                <img src="../static/img/tlogo ose item.jpg" class="logoose">
+                <img src="../static/img/tulisan algomarine.png" class="tulisanalgo">
+            </header>
+        </div>
+        <main>
+        <div class="data">
+            <div class="form">
+                <nav>
+                    <ul>
+                        <li><button type="button" id="inputbutton"><b>INPUT</b></button>
+                        <li><button type="button" id="outputbutton"><b>OUTPUT</b></button>
+                    </ul>
+                </nav>
+                <form action="/tim5/" method="POST" class="inputdata" enctype="multipart/form-data">
+                    <h2>Distribusi Temperatur VS Kedalaman</h2>
+                    <p>Filenya Dalam Bentuk Excel ya Kak. Format filenya boleh dibuka di <a href="static/untukalgo.xlsx">Sini</a></p>
+                   
+                    <input type="file" accept=".xlsx" name="inputkedalaman" id="inputkedalaman">
+                    <br>
+                    <br>
+                    <button type="submit" id="submitbutton"> Submit </button>
+                </form>
+                </div>
+            <!-- <div class="form">
+            <nav>
+                <ul>
+                    <li><button type="button" id="inputbutton"><b>INPUT</b></button>
+                    <li><button type="button" id="outputbutton"><b>OUTPUT</b></button>
+                </ul>
+            </nav>
+            <div class="inputdata">
+                <h2>Distribusi Temperatur VS Kedalaman</h2>
+                <p>Filenya Dalam Bentuk Excel ya Kak. Format filenya boleh dibuka di <a href="#">Sini</a></p>
+                <input type="file" accept=".xlsx" id="inputkedalaman">
+                <br>
+                <br>
+                <button type="submit" id="submitbutton"> Submit </button>
+            </div> -->
+            <div class="outputdata">
+                <h2>Hasilnya</h2>
+                <p>Nah Ini Hasilnya</p>
+                <p id="outputkedalaman">-</p>
+            </div>
+
+            <script type="text/javascript">
+                var openinputdata = document.getElementById("inputbutton");
+                var openoutputdata = document.getElementById("outputbutton");
+                
+                var inputsection = document.querySelector(".data .inputdata");
+                var outputsection = document.querySelector(".data .outputdata");
+
+                var styleinputsection = getComputedStyle(inputsection);
+                var styleoutputsection = getComputedStyle(outputsection);
+
+                openinputdata.addEventListener("click", openinputfunction);
+                openoutputdata.addEventListener("click", openoutputfunction);
+
+                function openinputfunction(){
+                    if(styleoutputsection.display =="block"){
+                        outputsection.style.display = "none";
+                        inputsection.style.display = "block";
+                    }
+                }
+                function openoutputfunction(){
+                    if(styleinputsection.display =="block"){
+                        outputsection.style.display ="block";
+                        inputsection.style.display="none";
+                    }
+                }
+
+                var inputkedalaman = document.getElementById("inputkedalaman");
+                
+
+                var submitbutton = document.getElementById("submitbutton");
+                submitbutton.addEventListener("click", openbuttonfunction);
+
+                var hasilkedalaman = document.getElementById("outputkedalaman");
+
+
+                function openbuttonfunction(){
+                    if(inputkedalaman.value == ""){
+                        return alert("Yuk diisi dulu datanya")
+                    }
+
+                    
+                    if(confirm("coba cek lagi semua")){
+                        hasilkedalaman.innerText = inputkedalaman.value;
+                        return alert("Okee silahkan dilihat hasilnya")
+                    }  
+                }
+            </script>
+            </div>
+        
+        </div>
+        </main>
+    </body>
+</html>
